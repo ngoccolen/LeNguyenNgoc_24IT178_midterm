@@ -1,0 +1,11 @@
+/ls
+/update
+/a.out
+*.o
+*.bak
+*.tmp
+core
+core.*
+*.zip
+*.tar.gz
+/tests/testdata/
