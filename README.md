@@ -1,8 +1,3 @@
-# Simplified NetBSD `ls(1)` in C
-
-## Mục tiêu
-
-Cài đặt một phiên bản rút gọn của `ls(1)` từ đầu bằng C và các API filesystem, theo tập option trong manual NetBSD 10.1 được giao. Chương trình không gọi `system("ls")` và không thực thi chương trình `ls` có sẵn.
 
 ## Cấu trúc
 
@@ -56,14 +51,5 @@ Chạy thủ công các option và so sánh với system `ls`:
 sh tests/compare.sh
 ```
 
-`tests/compare.sh` báo số test khớp chính xác. Những sai khác về định dạng, timestamp, total hoặc hành vi theo đặc thù NetBSD cần được xem xét trước khi ghi tỷ lệ tương đồng trong báo cáo. Không ghi phần trăm dựa trên dự đoán; dùng kết quả test thực tế.
 
-## Giới hạn cần ghi nhận
 
-Đây là một implementation học tập, không cam kết giống tuyệt đối mọi chi tiết định dạng của NetBSD `ls`. Các khác biệt ở căn cột, cách tính block theo biến môi trường, timestamp biên, special device files hoặc loại filesystem đặc thù cần được đánh giá trên NetBSD mục tiêu.
-
-## Thông tin nộp bài
-
-- Sinh viên: điền tên và mã sinh viên.
-- GitHub: thay bằng URL repository thực tế, ví dụ `https://github.com/USERNAME/Name_studentID_midterm`.
-- Kết quả test: cập nhật sau khi chạy trên NetBSD.
