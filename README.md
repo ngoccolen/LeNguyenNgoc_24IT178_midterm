@@ -22,7 +22,7 @@ make
 
 Dùng `make clean` để xóa binary `ls` và các file `.o`. Các file build được loại khỏi Git bằng `.gitignore`.
 
-## Các option trong phạm vi bài
+## Các option
 
 `-A -a -c -d -F -f -h -i -k -l -n -q -R -r -S -s -t -u -w`.
 
